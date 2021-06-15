@@ -12,7 +12,7 @@ const Bot = new twit({
 
 function BotInit() {
     var query = {
-        q: "shrek%20morar%20sozinho",
+        q: "shrek morar sozinho",
         result_type: "recent",
     };
 
@@ -31,7 +31,7 @@ function BotInit() {
 
         function BotRetweeted(error, response) {
             if (error) {
-                console.log("Não retwitou" + error);
+                console.log(error);
             } else {
                 console.log(`${id.id} rettwitado!`);
             }
@@ -39,5 +39,5 @@ function BotInit() {
     }
 }
 
-setInterval(BotInit, 30 * 60 * 1000);
+setInterval(BotInit, 1 * 60 * 1000);
 BotInit();
