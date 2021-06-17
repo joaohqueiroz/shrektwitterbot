@@ -39,5 +39,5 @@ function BotInit() {
     }
 }
 
-setInterval(BotInit, 1 * 60 * 1000);
+setInterval(BotInit, 30 * 60 * 1000);
 BotInit();
